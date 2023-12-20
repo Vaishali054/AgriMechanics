@@ -37,7 +37,7 @@ function NavBar() {
   };
 
   return (
-    <>
+    <div className="fixed">
       <div className="Navbar">
         <img
           className="company-logo"
@@ -79,7 +79,7 @@ function NavBar() {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 }
 

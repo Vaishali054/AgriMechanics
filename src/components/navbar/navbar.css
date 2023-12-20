@@ -1,5 +1,10 @@
 /* ======= NavBar Styles ======= */
-
+.fixed{
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 .Navbar{
    
 height: 70px;
@@ -13,7 +18,7 @@ justify-content: space-between;
 margin-bottom: 0px;
 }
 .bar{
-    background: #D81F84;
+    background: green;
     width: 60.007px;
 height: 2px;
 position: relative;
@@ -35,6 +40,14 @@ font-weight: 600;
 line-height: normal;
 padding:0px 20px ;
 cursor: pointer;
+}
+
+.links:hover{
+    color: green;
+}
+
+.bar:hover{
+    color: black;
 }
 
 .logo{
