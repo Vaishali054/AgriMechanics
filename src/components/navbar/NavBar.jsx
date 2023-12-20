@@ -1,23 +1,10 @@
 import React, { useState } from "react";
 import "./navbar.css";
-import logo from "../../assets/logo.png";
-import Login from "../login/Login";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faWhiskeyGlass } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
-import profile from "../../assets/profile.png";
-import { useModal } from "../../modalProvider/Modalprovider";
-import Otp from "../otp/Otp";
-import SignUp from "../signUp/SignUp";
 
 function NavBar() {
-  const {
-    openSignupModal,
-    openLoginModal,
-    isAuthenticated,
-    user,
-    openotpModal,
-  } = useModal();
   const navigate = useNavigate();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -30,37 +17,34 @@ function NavBar() {
       }
     }, 100);
   };
-
-  const handleClickStories = () => {
-    window.open("https://imagineher.org/our-impact", "_blank");
+  const handleClickVision = () => {
+    navigate("/");
+    setTimeout(() => {
+      const element = document.getElementById("vision");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
   };
+
 
   const handleClickHome = () => {
     navigate("/");
   };
 
-  const handleClickTicketHistory = () => {
-    navigate("/ticket-history/requests");
-  };
-
-  const handleProfile = () => {
-    navigate("/ticket-history");
-  };
-  const openSignup = () => {
+  const handleLogo = () => {
     navigate("/");
-    openSignupModal();
   };
-  const openOtp = () => {
-    navigate("/");
-    openotpModal();
-  };
-  const handleLogo=()=>{
-      navigate("/");
-  }
 
   return (
     <>
       <div className="Navbar">
+        <img
+          className="company-logo"
+          src={faWhiskeyGlass}
+          alt="company-logo"
+          onClick={handleLogo}
+        />
         <div className="navigation web">
           <div>
             <div className="links web" onClick={handleClickHome}>
@@ -71,34 +55,10 @@ function NavBar() {
           <div className="links web" onClick={handleClickServices}>
             Services
           </div>
-          {isAuthenticated ? (
-            <div className="links web" onClick={handleClickTicketHistory}>
-              Ticket History
-            </div>
-          ) : (
-            <div className="links web" onClick={handleClickStories}>
-              Impact
-            </div>
-          )}
+          <div className="links web" onClick={handleClickServices}>
+            Vision
+          </div>
         </div>
-        <img className="company-logo" src={logo} alt="company-logo" onClick={handleLogo} />
-        {isAuthenticated ? (
-          <>
-            <div className="navigation profile-design" onClick={handleProfile}>
-              <div className="email">{user.name}</div>
-              <img src={profile} alt="profile-pic" className="profile" />
-            </div>
-          </>
-        ) : (
-          <>
-            <div className="navigation">
-              <Login styleName="links" />
-              <div className="button" onClick={openSignup}>
-                SignUp
-              </div>
-            </div>
-          </>
-        )}
         <div
           className="mobile-menu-icon"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -114,37 +74,9 @@ function NavBar() {
           <div className="links" onClick={handleClickServices}>
             Services
           </div>
-          {isAuthenticated ? (
-            <div className="links" onClick={handleClickTicketHistory}>
-              Ticket History
-            </div>
-          ) : (
-            <div className="links" onClick={handleClickStories}>
-              Impact
-            </div>
-          )}
-          {isAuthenticated ? (
-            <>
-              <div className="links" onClick={handleProfile}>
-                Profile
-              </div>
-              <Otp notsignin={true} />
-              {user && !user.verified && (
-                <div className="links" onClick={openOtp}>
-                  Verify Email
-                </div>
-              )}
-            </>
-          ) : (
-            <>
-              <div className="links" onClick={openLoginModal}>
-                Login
-              </div>
-              <div className="links" onClick={openSignup}>
-                SignUp
-              </div>
-            </>
-          )}
+          <div className="links" onClick={handleClickServices}>
+            Vision
+          </div>
         </div>
       )}
     </>

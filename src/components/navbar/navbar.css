@@ -25,11 +25,7 @@ left: 18px;
     padding: 23px;
    
 }
-.profile-design{
-    position: relative;
-    bottom: 6px;
-    cursor: pointer;
-}
+
 .links{
     color: #35363A;
 font-family: 'Inter', sans-serif;
@@ -44,40 +40,14 @@ cursor: pointer;
 .logo{
     width: 60px;
     height: 60px;
-    flex-shrink: 0;
-    margin: 5px 5px;
 }
 
 .company-logo{
     width: 50px;
     height: 50px;
-    position: relative;
-    right: 64px;
-    margin: 10px;
-}
-.button{
-    font-weight: 500;
-  width: 120px;
-  height: 40px;
-  border-radius: 14.33px;
-background: #D81F84;
-cursor: pointer;
-text-align: center;
-position: relative;
-bottom: 7px;
-display: flex;
-align-items: center;
-justify-content: center;
-
-margin: 0px 30px;
-color: #FFF;
-font-family: 'Roboto', sans-serif;
-font-size: 20px;
-font-style: normal;
-
-line-height: normal;
 
 }
+
 .mobile-menu-icon {
     display: none; 
     margin: 18px 30px;
@@ -92,34 +62,7 @@ line-height: normal;
     border: 1px solid rgba(0, 0, 0, 0.08);
 background: rgba(0, 0, 0, 0.02);
   }
-  .email{
-    width: 138px;
-height: 36px;
-flex-shrink: 0;
-border-radius: 8px;
-background: #D81F84;
-color: #FFF;
-font-family: 'Roboto';
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-align-items: center;
-justify-content: center;
-display: flex;
-}
 
-.profile{
-   background-color:#E8E8E8;
-   
-   height: 50px;
-   width: 50px;
-   border-radius: 100%;
-   position: relative;
-   right: 13px;
-   bottom: 7px;
-
-}
 
 @media(max-width:800px){
     .web{
