@@ -55,7 +55,7 @@ function NavBar() {
           <div className="links web" onClick={handleClickServices}>
             Services
           </div>
-          <div className="links web" onClick={handleClickServices}>
+          <div className="links web" onClick={handleClickVision}>
             Vision
           </div>
         </div>
@@ -74,7 +74,7 @@ function NavBar() {
           <div className="links" onClick={handleClickServices}>
             Services
           </div>
-          <div className="links" onClick={handleClickServices}>
+          <div className="links" onClick={handleClickVision}>
             Vision
           </div>
         </div>
