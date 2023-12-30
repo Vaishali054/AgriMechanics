@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faWhiskeyGlass } from "@fortawesome/free-solid-svg-icons";
+import { faBars} from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
+import logo from "../../assests/Agrimechanic_logo-removebg.png"
 
 function NavBar() {
   const navigate = useNavigate();
@@ -41,7 +42,7 @@ function NavBar() {
       <div className="Navbar">
         <img
           className="company-logo"
-          src={faWhiskeyGlass}
+          src={logo}
           alt="company-logo"
           onClick={handleLogo}
         />
