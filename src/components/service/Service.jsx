@@ -2,7 +2,6 @@ import React from 'react'
 import "./service.css"
 import Card from '../card/Card'
 import Service1 from "../../assests/Service1.jpg"
-import Line from '../line/Line'
 import Service2 from "../../assests/Service2.jpg"
 import Service3 from "../../assests/Service3.jpg"
 export default function Service() {
