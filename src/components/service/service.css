@@ -1,0 +1,39 @@
+.section{
+    display: block;
+background: url('../../assests/vector.png'), lightgray 50% / cover no-repeat;
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    padding-top: 80px;
+    
+    
+}
+
+.heading{
+    margin: 0px 25px;
+    /* margin-bottom: 50px; */
+    color: #008000;
+    font-family: Ledger;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-container{
+    display: flex;
+    margin: 10px 100px;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 100px 0px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .card-container {
+      flex-direction: column; /* Stack cards vertically on smaller screens */
+      margin: 10px; /* Adjust margin for smaller screens */
+    }
+  }
