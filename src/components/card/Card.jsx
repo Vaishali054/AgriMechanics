@@ -15,6 +15,8 @@ export default function Card(props) {
 
             {CardHeading}
             </div>
+            <div className='description'>Empowering Agriculture Through Expert Implement Repairs.
+Sow the seeds of success with our precision repair services</div>
             </div>
       </div>
 

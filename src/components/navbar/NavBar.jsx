@@ -27,6 +27,15 @@ function NavBar() {
       }
     }, 100);
   };
+  const handleClickWorkshop = () => {
+    navigate("/");
+    setTimeout(() => {
+      const element = document.getElementById("workshop");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  };
 
 
   const handleClickHome = () => {
@@ -59,6 +68,9 @@ function NavBar() {
           <div className="links web" onClick={handleClickVision}>
             Vision
           </div>
+          <div className="links web" onClick={handleClickWorkshop}>
+            Workshops
+          </div>
         </div>
         <div
           className="mobile-menu-icon"
@@ -77,6 +89,9 @@ function NavBar() {
           </div>
           <div className="links" onClick={handleClickVision}>
             Vision
+          </div>
+          <div className="links" onClick={handleClickWorkshop}>
+            Workshops
           </div>
         </div>
       )}

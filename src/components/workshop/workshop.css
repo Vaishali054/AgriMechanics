@@ -1,0 +1,64 @@
+.map{
+   width: 700px;
+height: 544px;
+flex-shrink: 0;
+}
+
+.workshop{
+   display: flex;
+   padding: 0px 50px;
+   background-color: #1F4E3C;
+   justify-content:center;
+   align-items: center;
+   /* flex-wrap: wrap; */
+}
+
+.workshop-heading{
+   padding: 30px;
+   display: block;
+   color: #F0D17F;
+
+}
+.letter{
+   font-size: 45px;
+}
+
+
+
+@media (max-width:760px) {
+   .map{
+      width: 510px;
+      height: 500px;
+   }
+}
+@media (max-width:600px) {
+   .workshop-heading{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      padding: 30px 0px
+   }
+   .workshop{
+      display: block;
+      padding: 0px;
+   }
+   .map{
+      width: 510px;
+      height: 400px;
+   }
+   .letter{
+      font-size: 30px;
+   }
+}
+@media (max-width:500px) {
+   .map{
+      width: 400px;
+      height: 300px;
+   }
+}
+@media (max-width:400px) {
+   .map{
+      width: 330px;
+      height: 200px;
+   }
+}

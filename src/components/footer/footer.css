@@ -1,0 +1,68 @@
+/* ======= Footer Styles ======= */
+
+footer{
+    background: url("../../assests/footer.png"), lightgray 50% / cover no-repeat;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 50px;
+    padding-top: 30px;
+    color: black;
+}
+.company-description div,.Contacts div{
+    line-height: 1.32;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 14px;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 30px;
+}
+li{
+    padding: 0;
+    margin: 0 0 8px;
+}
+.pages{
+    display: block;
+}
+a{
+    color: black;
+}
+
+.contact{
+    font-family: 'Sen';
+    font-size: 20px !important;
+    font-weight: 800 !important;
+}
+.copyright{
+    color: #ffffff;
+    background-color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+ .logo{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ @media (max-width: 400px) {
+    footer{
+        padding: 20px;
+        justify-content: space-between;
+    }
+    .footer-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 30px;
+    }
+    .logo{
+        height: 100px;
+        width: 100px;
+    }
+ }

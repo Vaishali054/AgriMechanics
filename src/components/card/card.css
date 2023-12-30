@@ -1,31 +1,50 @@
 .card{
     display: block;
     margin: 20px;
+    background-color: #EEF2F5;
+
+    padding:  20px;
+    max-width: 351px;
 }
 
 .image-container{
-    border-radius: 30px 30px 0px 0px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
     width: 350px;
     height: 305px;
     flex-shrink: 0;
 }
 
-.heading-container{
-
-    opacity: 0.8;
-}
 .card-heading{
-    border-radius: 0px 0px 30px 30px;
-    background: #FFF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0);
-    width: 350px;
+    width: 340px;
     height: 68px;
     flex-shrink: 0;
     color: #000;
 font-family: Roboto;
-font-size: 30px;
+font-size: 25px;
 font-style: normal;
-font-weight: 400;
+font-weight: bolder;
 line-height: normal;
+background: white;
+padding: 10px;
+padding-right: 0px;
 }
+.description{
+    font-family: 'Roboto';
+    color: black;
+    padding-top: 20px;
+}
+
+@media (max-width:400px) {
+    .card-heading{
+        width: 240px;
+        font-size: 20px;
+    }
+    .card{
+        margin: 20px 0px;
+        width: 250px;
+        padding: 10px;
+    }
+    .image-container{
+        width: 250px;
+        height: 200px;
+    }
+ }
