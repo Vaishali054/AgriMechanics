@@ -1,0 +1,72 @@
+.hero{
+    display: block;
+    background-image: url("../../assests/hero.jpeg");
+    height: 40rem;
+    width: 100%;
+    background-size: cover;
+    padding-top: 80px;
+}
+
+img{
+    width: 50rem;
+    height: 35rem;
+}
+
+span{
+    font-size: 50px;
+}
+
+.tagline1{
+    color: #008000;
+font-family: Hind;
+font-size: 50px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 15rem;
+padding-left: 30px;
+}
+
+.tagline2{
+    color: #FFA500;
+font-family: Hind;
+font-size: 50px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+flex-shrink: 0;
+padding-left: 10rem;
+}
+
+@media (max-width:600px) {
+    .tagline1,.tagline2{
+        font-size: 40px;
+        font-weight:bolder;
+    }
+ }
+@media (max-width:500px) {
+    .tagline1,.tagline2{
+        font-size: 30px;
+        /* font-weight:bolder; */
+       margin-top: 0px;
+       padding-left: 20px;
+    }
+    .hero{
+        height: 20rem;
+    }
+    img{
+        height: 10rem;
+        width: 10rem;
+    }
+    .tagline1{
+        margin-top: 100px;
+    }
+ }
+ @media (max-width:400px) {
+    .tagline12{
+        padding-left: 0px;
+    }
+ }
