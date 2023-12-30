@@ -8,6 +8,7 @@ function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleClickServices = () => {
+    setMobileMenuOpen(false);
     setTimeout(() => {
       const element = document.getElementById("services");
       if (element) {
@@ -16,6 +17,7 @@ function NavBar() {
     }, 100);
   };
   const handleClickVision = () => {
+    setMobileMenuOpen(false);
     setTimeout(() => {
       const element = document.getElementById("vision");
       if (element) {
@@ -24,6 +26,7 @@ function NavBar() {
     }, 100);
   };
   const handleClickWorkshop = () => {
+    setMobileMenuOpen(false);
     setTimeout(() => {
       const element = document.getElementById("workshop");
       if (element) {
