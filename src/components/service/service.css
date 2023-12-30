@@ -77,4 +77,7 @@
     .description{
         padding: 20px;
     }
+    .section{
+        height: 100rem;
+    }
   }
