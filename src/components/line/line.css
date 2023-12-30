@@ -1,0 +1,8 @@
+.line{
+    width: 165px;
+    height: 7px;
+    flex-shrink: 0;
+    background: #008000;
+    position: absolute;
+    left: 120px;
+}
