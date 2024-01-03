@@ -2,7 +2,7 @@ import React from 'react'
 import "./card.css"
 
 export default function Card(props) {
-    const {CardUrl, CardHeading}=props;
+    const {CardUrl, CardHeading, CardDescription}=props;
   return (
     <>
       <div className='card'>
@@ -15,8 +15,7 @@ export default function Card(props) {
 
             {CardHeading}
             </div>
-            <div className='description'>Empowering Agriculture Through Expert Implement Repairs.
-Sow the seeds of success with our precision repair services</div>
+            <div className='description'>{CardDescription}</div>
             </div>
       </div>
 
