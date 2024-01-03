@@ -22,7 +22,7 @@ function Footer() {
             <br></br>
             <br></br>
             <br></br>
-            Contact: +91 7807655660
+            Contact: +919503552092
           </div>
         </div>
       </footer>
