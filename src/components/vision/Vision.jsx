@@ -21,7 +21,8 @@ export default function Vision() {
            <FontAwesomeIcon icon={faChevronDown} />
             </div>
            <div className='vision-detail'>
-            To provide well trained labour professionals
+            To provide one stop solution of all
+            kind of implements available.
 
            </div>
             </div>
@@ -31,8 +32,9 @@ export default function Vision() {
            <FontAwesomeIcon icon={faChevronDown} />
             </div>
             <div className='vision-detail'>
-            To provide total solution for the supply chain
-            management of spare parts
+            To provide on time service from
+            well trained people
+
             </div>
             </div>
            <div className='vision3'>
@@ -41,18 +43,9 @@ export default function Vision() {
            <FontAwesomeIcon icon={faChevronDown}/>
             </div>
             <div className='vision-detail'>
-            Design the workshops for efficient working
-            </div>
-            </div>
-           <div className='vision3'>
-            <div className='center icon'>
 
-           <FontAwesomeIcon icon={faChevronDown}/>
-            </div>
-            <div className='vision-detail'>
-            Advertisement and circulation of knowledge through
-            our channels
-            </div>
+            To open workshops in all
+            uttar Pradesh districts within next 1 year, to provide best service at every corner possible</div>
             </div>
         </div>
 
