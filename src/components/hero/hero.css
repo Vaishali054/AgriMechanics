@@ -1,6 +1,6 @@
 .hero{
     display: block;
-    background-image: url("../../assests/hero.jpeg");
+    background-image: url("../../assests/hero.jpg");
     height: 40rem;
     width: 100%;
     background-size: cover;
