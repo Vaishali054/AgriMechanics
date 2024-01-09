@@ -34,6 +34,15 @@ function NavBar() {
       }
     }, 100);
   };
+  const handleClickFranchise = () => {
+    setMobileMenuOpen(false);
+    setTimeout(() => {
+      const element = document.getElementById("franchise");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  };
 
   return (
     <div className="fixed">
@@ -59,6 +68,9 @@ function NavBar() {
           <div className="links web" onClick={handleClickWorkshop}>
             Workshops
           </div>
+          <div className="links web" onClick={handleClickFranchise}>
+            Franchise
+          </div>
         </div>
         <div
           className="mobile-menu-icon"
@@ -80,6 +92,9 @@ function NavBar() {
           </div>
           <div className="links" onClick={handleClickWorkshop}>
             Workshops
+          </div>
+          <div className="links" onClick={handleClickFranchise}>
+            Franchise
           </div>
         </div>
       )}
