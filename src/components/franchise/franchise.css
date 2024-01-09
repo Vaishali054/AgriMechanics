@@ -1,0 +1,21 @@
+.franchise-img{
+    height: 32rem;
+    display: flex;
+}
+
+@media (max-width:760px) {
+    .franchise-img{
+        /* padding: 50px; */
+        margin-top: 100px;
+        height: 20rem;
+        width: 30rem;
+    }
+}
+@media (max-width:500px) {
+    .franchise-img{
+        /* padding: 50px; */
+        height: 15rem;
+        width: 280px;
+        padding: 10px 0px;
+    }
+}

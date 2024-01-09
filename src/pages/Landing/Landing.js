@@ -5,6 +5,7 @@ import Service from '../../components/service/Service'
 import Workshop from '../../components/workshop/Workshop'
 import Vision from "../../components/vision/Vision"
 import Footer from "../../components/footer/Footer"
+import Franchise from '../../components/franchise/Franchise'
 
 export default function Landing() {
   return (
@@ -14,6 +15,7 @@ export default function Landing() {
       <Service/>
       <Vision/>
       <Workshop/>
+      <Franchise/>
       <Footer/>
     </>
   )
